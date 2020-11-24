@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>“Уединение2.0”</title>
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+    <script src="https://vr-ugar.github.io/portals/portals.js"></script>
+	<script src="https://vr-ugar.github.io/portals/aim.js"></script>
+	<script src="https://vr-ugar.github.io/portals/a-portal.js"></script>
+  </head>
+  
+  <body>
+    <a-scene background="color: orange" loading-screen="dotsColor: orange; backgroundColor: black">
+      <a-assets>
+		  <img id="1" src="assets/privacy1.jpg">
+	      <img id="2" src="assets/privacy2.jpg">
+	      <img id="3" src="assets/privacy3.jpg">
+	      <img id="4" src="assets/privacy4.jpg">
+	      <img id="5" src="assets/privacy5.jpg">
+		  <img id="6" src="assets/privacy6.jpg">
+		  <img id="7" src="assets/privacy7.jpg">
+		  <img id="8" src="assets/privacy8.jpg">
+		  <img id="9" src="assets/privacy9.jpg">
+		  <img id="10" src="assets/privacy10.jpg">
+		  <img id="11" src="assets/privacy11.jpg">
+		  <img id="12" src="assets/privacy12.jpg">
+		  <img id="13" src="assets/privacy13.jpg">
+		  <img id="14" src="assets/privacy14.jpg">
+		  <img id="15" src="assets/privacy15.jpg">
+	      
+          <audio id="sound" src="assets/privacy.mp3" preload="auto" loop="true"></audio>
+      </a-assets>
+
+      <a-camera position="0 0 0" wasd-controls="enabled: false">
+		<a-cursor visible="true" color="red"></a-cursor>
+	  	
+	  	<!-- comment out the next line when done -->
+	  	<!-- a-entity position="0 0 -10" aim --> 
+
+      <a-sound src="#sound" autoplay="true" loop="true" positional="false" position="0 2 -1"></a-sound>
+      </a-camera>
+
+		<a-entity id="loc_1" visible="true">
+			<a-sky material="src: #1"></a-sky>
+
+			<a-portal
+				to="loc_2"
+				src="#2"
+				position="-0.58 -4.51 8.91"
+				>
+			</a-portal>
+					
+		</a-entity>
+
+
+		<a-entity id="loc_2" visible="false">
+			<a-sky material="src: #2"></a-sky>
+
+			<a-portal
+				to="loc_1"
+				src="#1"
+				position="-1.36 -4.49 8.83"
+				>
+			</a-portal>
+			
+			<a-portal
+				to="loc_3"
+				src="#3"
+				position="8.1 -4.04 -4.25"
+				>
+			</a-portal>			
+			
+		</a-entity>
+
+
+		<a-entity id="loc_3" visible="false">
+			<a-sky material="src: #3"></a-sky>
+
+			<a-portal
+				to="loc_2"
+				src="#2"
+				position="3.36 -6.05 -7.22"
+				>
+			</a-portal>
+			
+			<a-portal
+				to="loc_4"
+				src="#4"
+				position="-9.09 -3.93 -1.38"
+				>
+			</a-portal>
+			
+			<a-portal
+				to="loc_5"
+				src="#5"
+				position="-1.5 -4.74 8.68"
+				>
+			</a-portal>
+					
+						
+		</a-entity>
+
+
+		<a-entity id="loc_4" visible="false">
+			<a-sky material="src: #4"></a-sky>
+
+			<a-portal
+				to="loc_3"
+				src="#3"
+				position="-8.96 -4.02 1.88"
+				>
+			</a-portal>	
+					
+			
+		</a-entity>
+
+
+		<a-entity id="loc_5" visible="false">
+			<a-sky material="src: #5"></a-sky>								
+					
+			<a-portal
+				to="loc_3"
+				src="#3"
+				position="1.9 -5.36 -8.22"
+				>
+			</a-portal>
+			
+			<a-portal
+				to="loc_6"
+				src="#6"
+				position="-8.11 -5.79 0.83"
+				>
+			</a-portal>
+			
+			<a-portal
+				to="loc_7"
+				src="#7"
+				position="-9.46 -2.01 -2.56"
+				>
+			</a-portal>
+			
+			<a-portal
+				to="loc_8"
+				src="#8"
+				position="1.71 -4.71 8.66"
+				>
+			</a-portal>
+
+		</a-entity>
+		
+		<a-entity id="loc_6" visible="false">
+			<a-sky material="src: #6"></a-sky>		
+		
+			
+			<a-portal
+				to="loc_5"
+				src="#5"
+				position="5.75 -5.11 -6.39"
+				>
+			</a-portal>		
+					
+						
+			
+		</a-entity>
+		
+		<a-entity id="loc_7" visible="false">
+			<a-sky material="src: #7"></a-sky>
+
+			<a-portal
+				to="loc_5"
+				src="#5"
+				position="2.98 -2.12 9.31"
+				>
+			</a-portal>		
+									
+
+		</a-entity>	
+		
+		<a-entity id="loc_8" visible="false">
+			<a-sky material="src: #8"></a-sky>
+
+						
+			<a-portal
+				to="loc_5"
+				src="#5"
+				position="-2.31 0.52 9.72"
+				>
+			</a-portal>
+			
+			<a-portal
+				to="loc_9"
+				src="#9"
+				position="0.39 -4.24 9.05"
+				>
+			</a-portal>							
+								
+
+		</a-entity>	
+	
+	<a-entity id="loc_9" visible="false">
+			<a-sky material="src: #9"></a-sky>
+
+				
+			<a-portal
+				to="loc_8"
+				src="#8"
+				position="8.69 -4.76 1.38"
+				>
+			</a-portal>
+				
+			<a-portal
+				to="loc_10"
+				src="#10"
+				position="-7.13 -0.48 -6.99"
+				>
+			</a-portal>
+		
+		</a-entity>	
+				
+		<a-entity id="loc_10" visible="false">
+			<a-sky material="src: #10"></a-sky>
+
+			<a-portal
+				to="loc_11"
+				src="#11"
+				position="-6.44 -0.66 -7.62"
+				>
+			</a-portal>
+		
+		</a-entity>		
+				
+		<a-entity id="loc_11" visible="false">
+			<a-sky material="src: #11"></a-sky>
+
+			<a-portal
+				to="loc_12"
+				src="#12"
+				position="9.86 -0.78 1.47"
+				>
+			</a-portal>
+		
+		</a-entity>	
+		
+		<a-entity id="loc_12" visible="false">
+			<a-sky material="src: #12"></a-sky>
+
+			<a-portal
+				to="loc_13"
+				src="#13"
+				position="-1.03 -0.98 9.9"
+				>
+			</a-portal>
+		
+		</a-entity>	
+				
+		<a-entity id="loc_13" visible="false">
+			<a-sky material="src: #13"></a-sky>
+
+			<a-portal
+				to="loc_14"
+				src="#14"
+				position="-9.78 -0.62 1.98"
+				>
+			</a-portal>
+		
+		</a-entity>	
+				
+		<a-entity id="loc_14" visible="false">
+			<a-sky material="src: #14"></a-sky>
+
+			<a-portal
+				to="loc_15"
+				src="#15"
+				position="8.02 -0.5 5.95"
+				>
+			</a-portal>
+		
+		</a-entity>			
+		
+		<a-entity id="loc_15" visible="false">
+			<a-sky material="src: #15"></a-sky>
+
+			<a-portal
+				to="loc_9"
+				src="#9"
+				position="0.44 -1.06 9.93"
+				>
+			</a-portal>
+		
+		</a-entity>	
+		
+    </a-scene>
+  </body>
+</html>
